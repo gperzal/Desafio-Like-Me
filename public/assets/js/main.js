@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   fetchAndDisplayPosts(); // Llama a esta función al cargar la página para mostrar los posts existentes
 });
 
-// Manejador del evento de envío del formulario de creación de posts
+
 document.getElementById('postForm').addEventListener('submit', async (event) => {
   event.preventDefault();
   const titulo = document.getElementById('postTitle').value;
@@ -17,7 +17,14 @@ document.getElementById('postForm').addEventListener('submit', async (event) => 
     console.error('Error al crear el post:', error);
 
   }
+
+  const offcanvasCrearPost = document.getElementById('offcanvasCrearPost');
+  const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasCrearPost);
+  bsOffcanvas.hide();
+
+  // Opcionalmente, limpiar el formulario aquí
 });
+
 
 // Función para obtener y mostrar todos los posts
 async function fetchAndDisplayPosts() {
@@ -28,11 +35,12 @@ async function fetchAndDisplayPosts() {
 
     posts.forEach(post => {
       const postElement = document.createElement('div');
-      postElement.className = 'card mb-3  ';
-      postElement.style = "width: 25rem";
+      postElement.className = 'col-lg-3 col-md-4 col-sm-6 col-12 mt-3 mb-4';
+      postElement.style = "width: 18rem";
       postElement.innerHTML = `
+                <div class="card h-100  d-flex flex-column"> 
                   <img src="${post.img}" class="card-img-top" alt="${post.titulo}">
-                  <div class="card-body">
+                  <div class="card-body  d-flex flex-column justify-content-between">
                       <h5 class="card-title">${post.titulo}</h5>
                       <p class="card-text">${post.descripcion}</p>
                       <div class="d-flex justify-content-between align-items-center">
@@ -58,6 +66,7 @@ async function fetchAndDisplayPosts() {
                           </div>
                       </div>
                   </div>
+                </div>
           `;
       postsContainer.appendChild(postElement);
     });
