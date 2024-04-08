@@ -52,9 +52,12 @@ Para ejecutar localmente, necesitas tener instalado Node.js y PostgreSQL. Sigue 
 
    
 
-6. Ejecuta las migraciones para crear las tablas en la base de datos: npx sequelize-cli db:migrate
+6. Ejecuta las migraciones para crear las tablas en la base de datos:
+   ```
+   npx sequelize-cli db:migrate
+   ```
 
-7. Inicia el servidor: 
+8. Inicia el servidor: 
     ```
    npm start
     ```
