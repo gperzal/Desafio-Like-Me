@@ -28,15 +28,21 @@ El código fuente está disponible en GitHub: [Desafío Like Me](https://github.
 Para ejecutar localmente, necesitas tener instalado Node.js y PostgreSQL. Sigue estos pasos para la instalación:
 
 1. Clona el repositorio: 
-    ```git clone https://github.com/gperzal/Desafio-Like-Me.git```
+    ```
+   git clone https://github.com/gperzal/Desafio-Like-Me.git
+    ```
 
-2. Navega al directorio del proyecto: 
-    ```cd DesafIo-Mi-Like-Me```
+3. Navega al directorio del proyecto: 
+    ```
+   cd DesafIo-Mi-Like-Me
+    ```
 
-3. Instala las dependencias: 
-    ```npm i```
+4. Instala las dependencias: 
+    ```
+   npm i
+    ```
 
-4. Configura las variables de entorno según tu configuración de PostgreSQL en un archivo .env
+5. Configura las variables de entorno según tu configuración de PostgreSQL en un archivo .env
     ```
     DB_USER = tu_usuario_de_base_de_datos
     DB_PASS = contraseña_de_base_de_datos
@@ -46,10 +52,12 @@ Para ejecutar localmente, necesitas tener instalado Node.js y PostgreSQL. Sigue 
 
    
 
-5. Ejecuta las migraciones para crear las tablas en la base de datos: npx sequelize-cli db:migrate
+6. Ejecuta las migraciones para crear las tablas en la base de datos: npx sequelize-cli db:migrate
 
-6. Inicia el servidor: 
-    ```npm start```
+7. Inicia el servidor: 
+    ```
+   npm start
+    ```
 
 ##  Características y Rutas
 
