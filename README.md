@@ -19,10 +19,6 @@ La aplicación está desplegada y disponible para uso en: [Like Me en Render](ht
 ![POSTGRES](https://img.shields.io/badge/Postgres-436590?style=for-the-badge&logo=postgresql&logoColor=fff&color=436590)
 ![Neon](https://img.shields.io/badge/neon-0c0c0c?style=for-the-badge&logo=neon&logoColor=fff&color=0c0c0c)
 
-## Repositorio
-
-El código fuente está disponible en GitHub: [Desafío Like Me](https://github.com/gperzal/Desafio-Like-Me.git)
-
 ## Instalación
 
 Para ejecutar localmente, necesitas tener instalado Node.js y PostgreSQL. Sigue estos pasos para la instalación:
